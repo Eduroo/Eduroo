@@ -1,0 +1,7 @@
+parameters:
+    level: 8
+    reportUnmatchedIgnoredErrors: false
+    paths:
+        - 'packages/Communication/src'
+        - 'packages/CourseCatalog/src'
+        - 'packages/SharedKernel/src'

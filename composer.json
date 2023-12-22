@@ -1,0 +1,48 @@
+{
+    "name": "eduroo/framework",
+    "description": "Set of packages helping you in creating your e-learning platform",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eduroo\\Communication\\": "packages/Communication/src/",
+            "Eduroo\\CourseCatalog\\": "packages/CourseCatalog/src/",
+            "Eduroo\\SharedKernel\\": "packages/SharedKernel/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacob Tobiasz",
+            "email": "jacob@alphpaca.io"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "doctrine/collections": "^2.1",
+        "symfony/uid": "^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "pestphp/pest": "^2.28",
+        "phpstan/phpstan": "^1.10",
+        "symplify/monorepo-builder": "^11.2"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "replace": {
+        "eduroo/communication": "self.version",
+        "eduroo/communication-contract": "self.version",
+        "eduroo/course-catalog": "self.version",
+        "eduroo/learning": "self.version",
+        "eduroo/shared-kernel": "self.version"
+    }
+}

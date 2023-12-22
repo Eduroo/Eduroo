@@ -1,0 +1,22 @@
+{
+    "name": "eduroo/course-catalog",
+    "description": "Set of packages helping you in creating your e-learning platform",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eduroo\\CourseCatalog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacob Tobiasz",
+            "email": "jacob@alphpaca.io"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "eduroo/shared-kernel": "^0.1",
+        "symfony/uid": "^6.0 || ^7.0"
+    }
+}
