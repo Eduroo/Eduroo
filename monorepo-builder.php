@@ -11,6 +11,7 @@ return static function (MBConfig $mbConfig): void {
         ComposerJsonSection::REQUIRE_DEV => [
             'mockery/mockery' => '^1.6',
             'pestphp/pest' => '^2.28',
+            'pestphp/pest-plugin-type-coverage' => '^2.5',
             'phpstan/phpstan' => '^1.10',
             'symplify/monorepo-builder' => '^11.2',
         ],

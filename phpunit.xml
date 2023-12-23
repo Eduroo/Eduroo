@@ -11,7 +11,9 @@
     </testsuites>
     <source>
         <include>
-            <directory suffix=".php">./packages/*/src</directory>
+            <directory suffix=".php">packages/Communication/src</directory>
+            <directory suffix=".php">packages/CourseCatalog/src</directory>
+            <directory suffix=".php">packages/SharedKernel/src</directory>
         </include>
     </source>
 </phpunit>
